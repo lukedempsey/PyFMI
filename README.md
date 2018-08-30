@@ -43,7 +43,6 @@ liblapack-dev \
 python-gi-cairo
 
 ```
-Saved state 1
 
 ## Python Modules
 ```
@@ -61,7 +60,7 @@ cairocffi
 ```
 
 ## Sundials
-PyFMI needs least Sundials 2.5/2.6, only 2.4.0 install works..
+PyFMI needs least Sundials 2.5/2.6, only 2.4.0 install works due to different build method (CMake over Make)
 ```
 mkdir ~/pyfmi
 cd ~/pyfmi
@@ -94,7 +93,7 @@ source ~/.profile
 # optional, check if it has loaded properly
 echo $C_INCLUDE_PATH
 ```
-saved state 2
+
 
 ## LAPACK
 Only need if using a GLIMDA solver
