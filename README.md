@@ -66,6 +66,7 @@ mkdir ~/pyfmi
 cd ~/pyfmi
 wget -qO- https://computation.llnl.gov/projects/sundials/download/sundials-2.4.0.tar.gz | tar xvz
 cd sundials-2.4.0
+# only set the below CFLAGS if running x64 system
 sudo ./configure CFLAGS="-fPIC"
 make
 sudo make install
